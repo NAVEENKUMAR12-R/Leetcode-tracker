@@ -15,20 +15,18 @@ class Countdisplay extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        contentPadding:
-            const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        tileColor: Color(0xFF2f184b),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+        tileColor: Color.fromRGBO(37, 1, 84, 1),
+
         leading: Text(
           '${index + 1}',
-          style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         title: Text(
           countmodel.Student_name ?? 'No Name',
           overflow: TextOverflow.ellipsis,
           maxLines: 1,
-          style: const TextStyle(
-              fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
         ),
         subtitle: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,8 +45,7 @@ class Countdisplay extends StatelessWidget {
         trailing: Text(
           "Solved\n${countmodel.count ?? 0}",
           textAlign: TextAlign.center,
-          style: const TextStyle(
-              fontSize: 16, color: Colors.green, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 16, color: Colors.green, fontWeight: FontWeight.bold),
         ),
       ),
     );
